@@ -1,0 +1,12 @@
+<link rel="stylesheet" type="text/css" href="/polls/static/polls/style.css" />
+<div id="main">
+<h1 id="total">You Scored: {{ total_correct }}/{{ total_questions }}</h1>
+<h2 id="ranking">{{ ranking }}</h2>
+<ol>
+{% for key, answer in results %}
+  <li>{{ answer.0 }}</li>
+  <h2>You answered {{ answer.1 }}</h2>
+  <h2>{{ answer.2 }}</h2>
+{% endfor %}
+</ol>
+</div>

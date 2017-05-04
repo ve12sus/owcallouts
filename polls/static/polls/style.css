@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Overwatch";
+  src: url("http://us.battle.net/forums/static/fonts/bignoodletoo/bignoodletoo.woff") format('woff');
+}
+@import url("https://fonts.googleapis.com/css?family=Rajdhani");
+
+h1 {
+  font-family: 'Overwatch','Rajdhani';
+  letter-spacing: 1px;
+}
+
+body {
+  background-color: #405275;
+  color: #fefefe;
+}
+
+label {
+  font-family: Arial;
+}
+
+#main {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#title {
+  font-family: 'Overwatch', 'Rajdhani';
+  text-align: center;
+  font-size: 3.5em;
+}
+
+#total {
+  text-align: center;
+  font-size: 2.5em;
+  color: #f7931e;
+}
+
+#ranking {
+  text-align: center;
+  font-size: 2em;
+  color: red;
+}
+
+li {
+  font-family: 'Overwatch', 'Rajdhani';
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-family: Arial;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  background-color: #f7931e;
+  color: #fefefe;
+  font-size: 2em;
+  font-family: Arial;
+  font-weight: 700;
+}

@@ -1,0 +1,9 @@
+<h1>{{ question.question_text }}</h1>
+<h2>You chose {{ answer }}</h2>
+{% if question.answer_text|stringformat:"s" == answer|stringformat:"s"  %}
+    <h1>Right</h1>
+{% else %}
+    <h1>Wrong</h1>
+{% endif %}
+
+

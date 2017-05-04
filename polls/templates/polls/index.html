@@ -1,0 +1,21 @@
+<link rel="stylesheet" type="text/css" href="static/polls/style.css" />
+<div id="main">
+<h1 id="title">Overwatch Ult Quiz</h1>
+{% if questions %}
+<form action="{% url 'polls:answer' %}" method="post">
+{% csrf_token %}
+{% for question in questions %}
+<h1>{{ question.question_text }}</h1>
+{% for choice in question.choice_set.all %}
+  <input type="radio" name="{{ question.id }}" id=
+"choice{{ forloop.counter }}" value="{{ choice }}" />
+  <label for="{{ question.id }}">{{ choice.choice_text }}</label>
+{% endfor %}
+{% endfor %}
+<br />
+<input type="submit" value="Answer" />
+</form>
+{% else %}
+    <p>No questions are available.</p>
+{% endif %}
+</div>
